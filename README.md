@@ -3,7 +3,7 @@ pod in iOS 11
 
 记录一下最近ios11 遇到的问题
 
-###1.如果使用CoacaPods, AppIcon会无法正常显示,并且导致打包提交时提示 " 120x120pixel appIcon... " 的错误
+### 1.如果使用CoacaPods, AppIcon会无法正常显示,并且导致打包提交时提示 " 120x120pixel appIcon... " 的错误
   解决方法:  复制如下代码到Podfile中, pod update 再重新运行或者打包就行.
  ```
 target 'Test' do
@@ -26,5 +26,5 @@ fi
 ```
   替换掉对应的工程下相同路径,文件的最后一行 `printf ... fi`
   
-###2. NavigateBar左右默认会有20的边距, 如果'NavigateBarItem'为'CustomView', 如果使用了图片,会在约束内自动拉伸item到图片大小,改变布局.需要修改image的大小到'CustomView'的大小, 而在ios11以前是不需要的
+### 2. NavigateBar左右默认会有20的边距, 如果'NavigateBarItem'为'CustomView', 如果使用了图片,会在约束内自动拉伸item到图片大小,改变布局.需要修改image的大小到'CustomView'的大小, 而在ios11以前是不需要的
   
