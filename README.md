@@ -25,8 +25,9 @@ target 'Test' do
 fi
 ```
   替换掉对应的工程下相同路径,文件的最后一行 `printf ... fi`
+  另外如果直接替换resources.sh, pod update以后又会复原的还得再改.
   [详情参考这里](https://github.com/CocoaPods/CocoaPods/issues/7003)
- 
+  2017.10.20 pod version 1.1.1
  
 ### 2. NavigateBarItem变形
   NavigateBarItem左右默认会有20的边距, ios11 titleView 和 左右item0间距 ,如果'NavigateBarItem'为'CustomView', 如果使用了图片,会在约束内自动拉伸item到图片大小,改变布局.需要修改image的大小到'CustomView'的大小, 而在ios11以前是不需要的
